@@ -1,0 +1,16 @@
+syntax="proto2";
+import "google/protobuf/any.proto";
+
+message Person{
+    required int32 id=1;
+    optional string name=2;
+}
+
+message Contact{
+    repeated Person persons=1;
+    optional google.protobuf.Any details=2;
+}
+
+
+
+
